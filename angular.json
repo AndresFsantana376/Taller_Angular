@@ -25,15 +25,10 @@
               }
             ],
             "styles": [
-<<<<<<< HEAD
   "node_modules/bootstrap/dist/css/bootstrap.min.css",
   "src/styles.css"
 ]
 
-=======
-              "src/styles.css"
-            ]
->>>>>>> fded70a795039cf287b6828003da198affa4b835
           },
           "configurations": {
             "production": {
