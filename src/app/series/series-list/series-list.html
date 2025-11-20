@@ -1,0 +1,40 @@
+<div class="series-container">
+
+  <h3 class="title">TV Series</h3>
+
+  <div class="row-layout">
+
+    <!-- Tabla a la izquierda -->
+    <div class="left-panel">
+      <table class="table table-striped custom-table">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Channel</th>
+            <th>Seasons</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let s of series" (click)="selectSerie(s)" class="click-row">
+            <td>{{ s.id }}</td>
+            <td class="serie-name">{{ s.name }}</td>
+            <td>{{ s.channel }}</td>
+            <td>{{ s.seasons }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="average"><strong>Seasons average: {{ averageSeasons() }}</strong></p>
+    </div>
+
+    <!-- Detalle a la derecha -->
+    <div class="right-panel" *ngIf="selectedSerie">
+      <h4>{{ selectedSerie.name }}</h4>
+      <img [src]="selectedSerie.poster" class="poster-img">
+      <p>{{ selectedSerie.description }}</p>
+    </div>
+
+  </div>
+</div>

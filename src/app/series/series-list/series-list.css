@@ -1,0 +1,49 @@
+.series-container {
+  width: 90%;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.row-layout {
+  display: flex;
+  gap: 30px;
+}
+
+.left-panel {
+  flex: 1; 
+}
+
+.right-panel {
+  flex: 1;
+  padding: 20px;
+  border-left: 2px solid #ccc;
+}
+
+.poster-img {
+  width: 250px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.custom-table {
+  cursor: pointer;
+}
+
+.click-row:hover {
+  background-color: #f0f0f0;
+}
+
+.serie-name {
+  font-weight: 600;
+  color: #0056b3;
+}
+
+.average {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
